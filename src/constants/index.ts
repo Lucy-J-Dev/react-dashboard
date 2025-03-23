@@ -18,50 +18,50 @@ import { EmployeeProps, LinkProps, ShortCutLinkProps, UserProps } from "./types"
 
 export const links: LinkProps[] = [
   {
-    href: "#",
+    href: "/",
     icon: FaChartBar,
-    text: "Dashboard",
+    text: "Contenido",
   },
   {
-    href: "#",
-    icon: FaCalendarAlt,
-    text: "Kanban",
-    badge: {
-      text: "Pro",
-      color: "bg-gray-100 text-gray-800",
-      darkColor: "dark:bg-gray-700 dark:text-gray-300",
-    },
-  },
-  {
-    href: "#",
-    icon: FaFacebookMessenger,
-    text: "Inbox",
-    badge: {
-      text: "4",
-      color: "bg-blue-100 text-blue-800",
-      darkColor: "dark:bg-blue-900 dark:text-blue-300",
-    },
-  },
-  {
-    href: "#",
-    icon: FaUsersCog,
-    text: "Users",
-  },
-  {
-    href: "#",
+    href: "/counter",
     icon: FaListAlt,
-    text: "Products",
+    text: "Aplicación contador",
   },
   {
-    href: "#",
+    href: "/todo",
     icon: IoIosLogIn,
-    text: "Sign In",
+    text: "Aplicación tareas",
   },
   {
-    href: "#",
-    icon: IoIosLogOut,
-    text: "Sign Up",
+    href: "/calculator",
+    icon: FaUsersCog,
+    text: "Aplicación calculadora",
   },
+  // {
+  //   href: "#",
+  //   icon: IoIosLogOut,
+  //   text: "Sign Up",
+  // },
+  // {
+  //   href: "#",
+  //   icon: FaCalendarAlt,
+  //   text: "Kanban",
+  //   badge: {
+  //     text: "Pro",
+  //     color: "bg-gray-100 text-gray-800",
+  //     darkColor: "dark:bg-gray-700 dark:text-gray-300",
+  //   },
+  // },
+  // {
+  //   href: "#",
+  //   icon: FaFacebookMessenger,
+  //   text: "Inbox",
+  //   badge: {
+  //     text: "4",
+  //     color: "bg-blue-100 text-blue-800",
+  //     darkColor: "dark:bg-blue-900 dark:text-blue-300",
+  //   },
+  // },
 ];
 
 export const employeesData: EmployeeProps[] = [
@@ -152,131 +152,3 @@ export const events = [
     description: "Connect with professionals in your field.",
   },
 ];
-
-// ------- ==
-// chart data, later we will use this!!!
-
-// const options = {
-//   series: [44, 55, 41],
-//   options: {
-//     chart: {
-//       type: "donut",
-//       height: 350,
-//     },
-//     labels: ["Desktop", "Tablet", "Mobile"],
-//     colors: ["#FF5733", "#33FF57", "#3357FF"],
-//     legend: {
-//       position: "bottom",
-//       labels: {
-//         colors: darkMode ? "#dddddd" : "#000000",
-//       },
-//     },
-//     dataLabels: {
-//       style: {
-//         colors: ["#dddddd"],
-//       },
-//     },
-//     responsive: [
-//       {
-//         breakpoint: 480,
-//         options: {
-//           chart: {
-//             width: 200,
-//           },
-//           legend: {
-//             position: "bottom",
-//           },
-//         },
-//       },
-//     ],
-//   },
-// };
-
-// ..........
-// const chartConfig = {
-//   series: [
-//     {
-//       name: "Sales",
-//       data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
-//     },
-//   ],
-//   options: {
-//     chart: {
-//       type: "bar",
-//       height: 240,
-//       toolbar: {
-//         show: false,
-//       },
-//     },
-//     title: {
-//       show: false,
-//     },
-//     dataLabels: {
-//       enabled: false,
-//     },
-//     colors: ["#020617"],
-//     plotOptions: {
-//       bar: {
-//         columnWidth: "40%",
-//         borderRadius: 2,
-//       },
-//     },
-//     xaxis: {
-//       axisTicks: {
-//         show: false,
-//       },
-//       axisBorder: {
-//         show: false,
-//       },
-//       labels: {
-//         style: {
-//           colors: darkMode ? "#dddddd" : "#616161",
-//           fontSize: "12px",
-//           fontFamily: "inherit",
-//           fontWeight: 400,
-//         },
-//       },
-//       categories: [
-//         "Apr",
-//         "May",
-//         "Jun",
-//         "Jul",
-//         "Aug",
-//         "Sep",
-//         "Oct",
-//         "Nov",
-//         "Dec",
-//       ],
-//     },
-//     yaxis: {
-//       labels: {
-//         style: {
-//           colors: darkMode ? "#dddddd" : "#616161",
-//           fontSize: "12px",
-//           fontFamily: "inherit",
-//           fontWeight: 400,
-//         },
-//       },
-//     },
-//     grid: {
-//       show: true,
-//       borderColor: "#a0a0a0",
-//       strokeDashArray: 5,
-//       xaxis: {
-//         lines: {
-//           show: true,
-//         },
-//       },
-//       padding: {
-//         top: 5,
-//         right: 20,
-//       },
-//     },
-//     fill: {
-//       opacity: 0.8,
-//     },
-//     tooltip: {
-//       theme: "dark",
-//     },
-//   },
-// };
