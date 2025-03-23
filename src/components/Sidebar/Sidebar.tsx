@@ -1,3 +1,6 @@
+import { links } from "../../constants";
+import LinkItem from "./LinkItem";
+
 type SidebarProps = {
   isSidebarOpen: boolean;
 };
@@ -10,7 +13,12 @@ const Sidebar = ({ isSidebarOpen }: SidebarProps) => {
       } `}
     >
       <div className="h-full px-3 pb-4 overflow-y-auto">
-        <ul className="space-y-2 font-medium"></ul>
+        <ul className="space-y-2 font-semibold">
+          {links.map((link, index) => (
+            <LinkItem key={index} {...link} />
+          ))}
+          <li>link</li>
+        </ul>
       </div>
     </aside>
   );

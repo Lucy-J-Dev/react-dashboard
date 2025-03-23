@@ -14,8 +14,9 @@ import { FaChartBar, FaCalendarAlt, FaFacebookMessenger, FaUsersCog, FaListAlt }
 import user01 from "../assets/user01.png";
 import user02 from "../assets/user02.png";
 import user03 from "../assets/user03.png";
+import { EmployeeProps, LinkProps, ShortCutLinkProps, UserProps } from "./types";
 
-export const links = [
+export const links: LinkProps[] = [
   {
     href: "#",
     icon: FaChartBar,
@@ -63,9 +64,9 @@ export const links = [
   },
 ];
 
-export const empolyeesData = [
+export const employeesData: EmployeeProps[] = [
   {
-    title: "Total Empolyees",
+    title: "Total Employees",
     icon: IoIosPerson,
     count: 200,
     bgColor: "bg-gray-100",
@@ -84,7 +85,7 @@ export const empolyeesData = [
   },
 ];
 
-export const shortcutLink = [
+export const shortcutLink: ShortCutLinkProps[] = [
   {
     title: "Goals",
     icon: GoGoal,
@@ -103,7 +104,7 @@ export const shortcutLink = [
   },
 ];
 
-export const users = [
+export const users: UserProps[] = [
   {
     name: "Robert Fox",
     country: "USA",
