@@ -8,7 +8,7 @@ type SidebarProps = {
 const Sidebar = ({ isSidebarOpen }: SidebarProps) => {
   return (
     <aside
-      className={`fixed top-0 left-0 z-40 w-64 h-screen pt-20 bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700 transform ${
+      className={`fixed top-0 left-0 z-40 w-64 h-screen pt-20 bg-rose-300 border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700 transform ${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
       } `}
     >

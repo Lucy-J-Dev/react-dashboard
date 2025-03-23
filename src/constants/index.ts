@@ -1,15 +1,9 @@
 import { GoGoal } from "react-icons/go";
 import { GrPlan } from "react-icons/gr";
-import {
-  IoIosStats,
-  IoIosSettings,
-  IoIosPerson,
-  IoIosPersonAdd,
-  IoIosEyeOff,
-  IoIosLogIn,
-  IoIosLogOut,
-} from "react-icons/io";
-import { FaChartBar, FaCalendarAlt, FaFacebookMessenger, FaUsersCog, FaListAlt } from "react-icons/fa";
+import { IoIosStats, IoIosSettings, IoIosPerson, IoIosPersonAdd, IoIosEyeOff } from "react-icons/io";
+import { RxDashboard } from "react-icons/rx";
+import { MdExposurePlus1 } from "react-icons/md";
+import { FaTasks, FaCalculator } from "react-icons/fa";
 
 import user01 from "../assets/user01.png";
 import user02 from "../assets/user02.png";
@@ -19,22 +13,22 @@ import { EmployeeProps, LinkProps, ShortCutLinkProps, UserProps } from "./types"
 export const links: LinkProps[] = [
   {
     href: "/",
-    icon: FaChartBar,
+    icon: RxDashboard,
     text: "Contenido",
   },
   {
     href: "/counter",
-    icon: FaListAlt,
+    icon: MdExposurePlus1,
     text: "Aplicación contador",
   },
   {
     href: "/todo",
-    icon: IoIosLogIn,
+    icon: FaTasks,
     text: "Aplicación tareas",
   },
   {
     href: "/calculator",
-    icon: FaUsersCog,
+    icon: FaCalculator,
     text: "Aplicación calculadora",
   },
   // {
