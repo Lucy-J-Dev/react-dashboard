@@ -5,15 +5,13 @@ import Content from "../ui/Content";
 
 const ContentPage = () => {
   return (
-    <>
+    <div className="flex flex-1 flex-col gap-3 lg:flex-row">
       <Content>
-        <div className="flex flex-col gap-3 lg:flex-row">
-          <Team />
-        </div>
+        <Team />
         <Stats />
       </Content>
       <Profile />
-    </>
+    </div>
   );
 };
 
