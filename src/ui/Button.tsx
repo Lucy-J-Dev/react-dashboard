@@ -1,16 +1,16 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   text: string;
   desc: string;
   icon?: ReactNode;
-}
+};
 
 const AnimatedButton = ({ icon, text, desc, onClick, ...rest }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className="relative overflow-hidden bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg flex items-center justify-center gap-2  w-48 h-14 group"
+      className="relative overflow-hidden bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg flex items-center justify-center gap-2  w-48 h-14 group active:scale-95 transition-transform duration-150"
       {...rest}
     >
       {/* icono y texto principal */}
