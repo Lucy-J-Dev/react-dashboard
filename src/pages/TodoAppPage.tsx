@@ -34,19 +34,22 @@ const TodoAppPage = () => {
 
   return (
     <div className="bg-white flex flex-col items-center justify-center px-6 py-6 gap-2 rounded-xl">
-      <Title>Lista de tareas</Title>
+      <Title>Crea una tarea</Title>
       <TodoForm onTaskSubmited={handleAddTask} />
-      {tasks.length > 0 ? (
-        <>
-          {tasks.map((task, index) => (
-            <TaskItem key={index} {...task} onTaskCompleted={handleCompleteTask} onTaskDeleted={handleDeleteTask} />
-          ))}
-        </>
-      ) : (
-        <div>
-          <p>Todavía no existen tareas. Crea una aquí ☝</p>
-        </div>
-      )}
+      <div className="pt-6 w-full flex flex-col items-center justify-center gap-2">
+        <Title>Lista de tareas</Title>
+        {tasks.length > 0 ? (
+          <>
+            {tasks.map((task, index) => (
+              <TaskItem key={index} {...task} onTaskCompleted={handleCompleteTask} onTaskDeleted={handleDeleteTask} />
+            ))}
+          </>
+        ) : (
+          <div>
+            <p>Todavía no existen tareas. Crea una aquí ☝</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
